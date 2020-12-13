@@ -1,0 +1,52 @@
+<!--pages/0/0.wxml-->
+<view class="bg" >
+  <image class="bg-image" src="/images/a.png"></image>
+</view>
+
+<view class="timeDate">
+  <view class="time">
+    <text>{{newDate}}</text>
+  </view>
+  <view class="date">
+    <view class="a">
+      <text>\n</text>
+      <text>{{newTime}}</text> 
+    </view> 
+    <view class="a">
+      <text>良好习惯从放下手机开始</text>
+    </view>
+  </view>
+</view>
+
+<view class="b">
+  <image src="/images/b.png" class="bSize"></image>
+</view>
+
+<view class="c">
+  <image src="/images/c.png" class="cSize" bindtap="cBindTap"></image>
+</view>
+
+<view class="d">
+  <image src="/images/d.png" class="dSize" bindtap="fBindTap"></image>
+</view>
+
+<view class="begin">
+  <button class="beginClass" bindtap="dBindTap">开始上课</button>
+</view>
+
+<view class="number">
+  <button class="beginClass">
+    <view class="select">
+      <text>选择上</text>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view>{{array[index]}}</view>
+      </picker>
+      <text>节课</text>
+    </view>
+  </button>
+</view>
+
+
+<view class="ass">
+  <image src="/images/ass.png" class="assSize" ></image>
+</view>

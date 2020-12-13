@@ -1,0 +1,51 @@
+<!--pages/0/0.wxml-->
+<view class="bg" >
+  <image class="bg-image" src="/images/a.png"></image>
+</view>
+
+<scroll-view bindscroll="scroll" class="scrollBox" scroll-y="{{scrollFlag}}" scroll-top="{{scrollTop}}" scroll-with-animation="true">
+<view>
+  <view class="title">
+  <text>今日学习计划</text>
+  </view>
+  <view wx:for="{{list}}" wx:key="{{index}}">
+    <template is="record" data="{{item, index, starUrl, starHlUrl}}"></template>
+  </view>
+
+  <view class="btnBox">
+    <button bindtap="confirmPlan" class="confirm" ><text>确认计划</text></button>
+    </view>
+  </view>
+<template is="loading" wx:if="{{isEmpty}}" data="{{message, title}}"></template>
+</scroll-view>
+
+<template name="record">
+<view class="container">
+  <view class="left" style="{{item.leftStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+    <view class="timeBox">
+      <picker mode="time" value="{{item.timeStart}}" start="00:00" end="24:00" bindchange="bindTimeChange" data-index="{{index}}" data-time="timeStart">
+        <view class="time">{{item.timeStart}}</view>
+      </picker> —
+      <picker mode="time" value="{{item.timeEnd}}" start="00:00" end="24:00" bindchange="bindTimeChange" data-index="{{index}}" data-time="timeEnd">
+        <view class="time">{{item.timeEnd}}</view>
+      </picker>
+    </view>
+    <input type="text" placeholder="{{item.placeholder}}" bindfocus="bindfocus" bindblur="bindblur" data-index="{{index}}" bindinput="bindInput" value="{{item.value}}"/>
+    
+  </view>
+  <view class="right" style="{{item.rightStyle}}">
+    <view class="add" bindtap="addRecord" data-index="{{index}}">添加</view>
+    <view class="del" bindtap="delRecord" data-index="{{index}}">删除</view>
+  </view>
+</view>
+</template>
+
+<template name="loading">
+<view class="loading">
+  <view class="tip">
+    <view class="head">{{title}}</view>
+    <view class="words">{{message}}</view>
+    <view bindtap="outLoading" class="suretip">确定</view>
+  </view>
+</view>
+</template>

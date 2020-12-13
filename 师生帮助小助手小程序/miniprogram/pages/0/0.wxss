@@ -1,0 +1,111 @@
+/* pages/0/0.wxss */
+page{
+  height:100%;
+
+}
+
+.bg-image{
+  position:fixed;
+  background-size:100% 100%;
+  z-index:-999;
+  width:100%;
+  height:100%;
+  display:block;
+
+}
+  
+.bg{
+  width : 100%;
+  height : 100%;
+}
+
+.timeDate{
+  display:flex;
+}
+
+.time{
+  padding-left:110rpx;
+  font-size:100rpx;
+  font-weight:bolder;
+  color:white;
+
+}
+
+.date{
+  font-size:25rpx;
+  color:white;
+  font-weight:bold;
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+  padding-bottom:1000rpx;
+}
+  
+.a{
+  flex-grow:1;
+}
+
+.b{ 
+  position:absolute;
+  display:flex;
+  height: 100%; 
+  width:100%;                     
+  justify-content: center;
+  align-items:center;
+}
+ 
+.bSize{
+  height:700rpx;
+  width:600rpx;
+}
+
+.c{
+  position:absolute;
+  padding-left:120rpx;
+  padding-top:950rpx;
+  z-index:999;
+}
+
+.cSize{
+  height:130rpx;
+  width:130rpx;
+}
+
+.d{
+  position:absolute;
+  padding-left:530rpx;
+  padding-top:970rpx;
+  z-index:998;
+} 
+
+.dSize{
+  height:110rpx;
+  width:110rpx;
+}
+
+
+
+.mytop-box{
+  position:absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+}
+.mytop-avatar{
+  overflow:hidden;  
+  width: 130rpx;
+  height: 130rpx; 
+  left: 50%;  
+  border-radius: 50%;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+.mytop-username{
+  font-size: 35rpx;
+  font-weight:bold;
+  font-family: SourceHanSansCN-Medium;
+  color: #000000;
+  margin-top: 10rpx;
+}

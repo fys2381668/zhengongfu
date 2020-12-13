@@ -1,0 +1,47 @@
+<!--pages/2/2.wxml-->
+<view class="bg" >
+  <image class="bg-image" src="/images/a.png"></image>
+</view>
+
+<view class="timeDate">
+  <view class="time">
+    <text>{{newDate}}</text>
+  </view>
+  <view class="date">
+    <view class="a">
+      <text>\n</text>
+      <text>{{newTime}}</text> 
+    </view> 
+    <view class="a">
+      <text>良好习惯从放下手机开始</text>
+    </view>
+  </view>
+</view>
+
+<view class="b">
+  <image src="/images/b.png" class="bSize"></image>
+</view>
+
+<view class="c">
+  <image src="/images/c.png" class="cSize" bindtap="cBindTap"></image>
+</view>
+
+<view class="d">
+  <image src="/images/d.png" class="dSize" bindtap="dBindTap"></image>
+</view>
+
+<view class="f">
+  <image src="/images/f.png" class="fSize" hidden="{{inShow}}"></image>
+</view>
+
+<view class="listen">
+    <text class="listenSize" hidden="{{show}}">已经连续听课</text>
+</view>
+
+<view class="numb">
+  <text class="numbSize" hidden="{{show}}">{{minute}}分{{second}}秒</text>
+</view>
+
+<view class="rest">
+  <button class="restClass" bindtap="Reset" hidden="{{show}}">下课休息</button>
+</view>

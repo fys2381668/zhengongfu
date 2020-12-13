@@ -1,0 +1,134 @@
+/* miniprogram/pages/2/2.wxss *//* pages/0/0.wxss */
+page{
+  height:100%;
+
+}
+
+.bg-image{
+  position:fixed;
+  background-size:100% 100%;
+  z-index:-999;
+  width:100%;
+  height:100%;
+  display:block;
+
+}
+  
+.bg{
+  width : 100%;
+  height : 100%;
+}
+
+.timeDate{
+  display:flex;
+}
+
+.time{
+  padding-left:110rpx;
+  font-size:100rpx;
+  font-weight:bolder;
+  color:white;
+
+}
+
+.date{
+  font-size:25rpx;
+  color:white;
+  font-weight:bold;
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+  padding-bottom:1000rpx;
+}
+  
+.a{
+  flex-grow:1;
+}
+
+.b{ 
+  position:absolute;
+  display:flex;
+  height: 100%; 
+  width:100%;                     
+  justify-content: center;
+  align-items:center;
+}
+ 
+.bSize{
+  height:700rpx;
+  width:600rpx;
+}
+
+.c{
+  position:absolute;
+  padding-left:120rpx;
+  padding-top:950rpx;
+  z-index:999;
+}
+
+.cSize{
+  height:130rpx;
+  width:130rpx;
+}
+
+.d{
+  position:absolute;
+  padding-left:530rpx;
+  padding-top:970rpx;
+  z-index:999;
+} 
+
+.dSize{
+  height:110rpx;
+  width:110rpx;
+}
+
+.f{
+  position:absolute;
+  display:flex;
+  height: 100%; 
+  width:100%;                     
+  justify-content: center;
+  align-items:center;
+}
+
+.fSize{
+  height:400rpx;
+  width:480rpx;
+}
+
+.listen{
+  position:absolute;
+  padding-top:400rpx;
+  padding-left:140rpx;
+}
+
+.listenSize{
+  font-size:80rpx;
+  font-weight:bold;
+  color:#538d82;
+}
+
+.numb{
+  position:absolute;
+  padding-top:500rpx;
+  padding-left:150rpx;
+}
+
+.numbSize{
+  font-size:100rpx;
+  font-weight:bolder;
+  color:#28534b;
+}
+
+.rest{
+  position:absolute;
+  padding-left:200rpx;
+  padding-top:720rpx;
+  z-index:999;
+}
+
+.restClass{
+  background-color:#8bcfb0;
+  color:white;
+}
